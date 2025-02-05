@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta  charset="utf-8" />
+    <title>演算子と優先順位</title>
+  </head>
+  <body>
+    <script>
+      let result;
+      result = 3 + 4 * 5;
+      result = (3 + 4) * 5;
+      console.log(result);
+      
+      let height; //身長
+      let stdWeight; //体重
+      
+      height = prompt("身長を入力してください", 150);
+      stdWeight = (height - 100) * 0.9;
+      console.log("身長:" + height + "cm");
+      console.log("標準体重:" + stdWeight + "kg");
+    </script>
+  </body>
+</html>
