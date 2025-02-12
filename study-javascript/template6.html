@@ -9,6 +9,7 @@
       let refValue = 80;//基準値
       let score; //点数
       score = prompt("点数を入力してください", 80);
+      
       if (score == 100) {
         console.log("百点満点");
       }
@@ -20,6 +21,21 @@
         console.log("不合格です");
         console.log("もう少し頑張りましょう");
       }
+      
+      let month;
+      month = prompt("月を入力してください", 1);
+      
+      if ((month == 12) || (month == 1) || (month == 2)) { //12,1,2のどれか
+        console.log("冬");
+      } else if ((month >= 3) && (month <= 5)) { //3以上、かつ5以下
+        console.log("春");
+      } else if ((month >= 6) && (month <= 8)) { //6以上、かつ8以下
+        console.log("夏");
+      }  else if ((month >= 9) && (month <= 11)) { //9以上、かつ11以下
+        console.log("秋");
+      }  else {
+        console.log("1から12の値を入力してください");
+      }  
     </script>
   </body>
 </html>
