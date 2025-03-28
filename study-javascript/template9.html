@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>ユーザー定義関数の作成</title>
+    <script>
+      function dollToYen(doll, rate) {
+        let yen;
+        yen = doll * rate;
+        return yen;
+      }
+    </script>
+  </head>
+  <body>
+    <script>
+        let yen1 = dollToYen(100, 150);
+        console.log(yen1 + "円");
+        
+        let doll2 = 50;
+        let rate2 = 130;
+        let yen2 = dollToYen(doll2, rate2);
+        console.log(yen2 + "円");
+        
+        function testFunc() {
+          let num = 2;
+          console.log("in func → " + num);
+        }
+    </script>
+  </body>
+</html>
